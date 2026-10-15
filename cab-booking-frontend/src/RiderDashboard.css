@@ -1,0 +1,330 @@
+
+.rider-page {
+    min-height: 100vh;
+    background: #f5f7f3;
+    color: #1d2a21;
+}
+
+.rider-header {
+    height: 76px;
+    padding: 0 7%;
+    background: white;
+    border-bottom: 1px solid #e8ece7;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.rider-brand {
+    display: flex;
+    align-items: center;
+    gap: 11px;
+    font-size: 21px;
+    font-weight: 800;
+}
+
+.brand-mark {
+    display: grid;
+    place-items: center;
+    width: 36px;
+    height: 36px;
+    border-radius: 11px;
+    background: #d5f278;
+}
+
+.header-actions {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.rider-badge {
+    background: #edf5e5;
+    color: #4d6a32;
+    padding: 8px 13px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.logout-btn, .refresh-btn {
+    border: 1px solid #dce3dc;
+    background: white;
+    padding: 9px 13px;
+    border-radius: 9px;
+    cursor: pointer;
+}
+
+.rider-welcome {
+    margin: 38px auto 28px;
+    max-width: 1120px;
+    padding: 0 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.rider-eyebrow, .section-label {
+    color: #718b4a;
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 1.7px;
+}
+
+.rider-welcome h1 {
+    font-size: clamp(32px, 4vw, 46px);
+    letter-spacing: -1.8px;
+    margin: 10px 0;
+}
+
+.rider-welcome p, .muted {
+    color: #7a857c;
+    font-size: 14px;
+}
+
+.welcome-icon {
+    display: grid;
+    place-items: center;
+    width: 72px;
+    height: 72px;
+    border-radius: 22px;
+    background: #e4efce;
+    font-size: 36px;
+}
+
+.rider-grid {
+    max-width: 1120px;
+    margin: 0 auto;
+    padding: 0 24px 50px;
+    display: grid;
+    grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+    gap: 24px;
+    align-items: start;
+}
+
+.booking-card, .history-card {
+    background: white;
+    border: 1px solid #e9ede7;
+    border-radius: 18px;
+    padding: 27px;
+    box-shadow: 0 8px 30px #263d2706;
+}
+
+.booking-card h2, .history-card h2 {
+    margin: 10px 0 6px;
+    font-size: 22px;
+    letter-spacing: -.6px;
+}
+
+.booking-card form {
+    margin-top: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.booking-card label {
+    font-size: 12px;
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.booking-card input {
+    padding: 13px;
+    border: 1px solid #dfe5dd;
+    border-radius: 9px;
+    width: 100%;
+    background: white;
+}
+
+.route-line {
+    height: 13px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding-left: 5px;
+}
+
+.route-line > span:nth-child(2) {
+    width: 1px;
+    height: 13px;
+    border-left: 1px dashed #aab4a8;
+}
+
+.route-dot {
+    flex: 0 0 auto;
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background: #6f954a;
+}
+
+.drop-dot {
+    background: #d6a348;
+}
+
+.estimate-btn {
+    border: 1px solid #dce5d7;
+    color: #3f5e32;
+    background: #f7faf3;
+    border-radius: 9px;
+    padding: 12px;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+.book-btn {
+    border: 0;
+    background: #203b2e;
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+.book-btn:disabled {
+    opacity: .65;
+    cursor: wait;
+}
+
+.fare-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px;
+    background: #f3f7ec;
+    border-radius: 9px;
+    font-size: 13px;
+}
+
+.fare-box strong {
+    font-size: 19px;
+}
+
+.rider-message {
+    padding: 12px;
+    background: #f2f7eb;
+    border-radius: 9px;
+    font-size: 13px;
+    line-height: 1.5;
+    overflow-wrap: anywhere;
+}
+
+.history-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 22px;
+}
+
+.empty-state {
+    padding: 65px 10px;
+    text-align: center;
+    color: #7d887e;
+}
+
+.empty-icon {
+    margin: auto;
+    width: 56px;
+    height: 56px;
+    display: grid;
+    place-items: center;
+    border-radius: 18px;
+    background: #f0f4ec;
+    font-size: 30px;
+}
+
+.empty-state h3 {
+    color: #344437;
+    margin-bottom: 7px;
+}
+
+.empty-state p {
+    font-size: 13px;
+}
+
+.ride-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.ride-item {
+    padding: 17px 0;
+    border-top: 1px solid #edf0eb;
+}
+
+.ride-route {
+    display: flex;
+    align-items: flex-start;
+    gap: 11px;
+    margin: 12px 0;
+}
+
+.ride-route > div {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.route-caption {
+    font-size: 9px;
+    letter-spacing: 1px;
+    color: #8a958b;
+}
+
+.ride-route strong {
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.ride-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 17px;
+}
+
+.status-pill {
+    font-size: 10px;
+    font-weight: 800;
+    padding: 6px 9px;
+    border-radius: 20px;
+    background: #f0f2ed;
+}
+
+.status-pill.completed {
+    background: #e7f5df;
+    color: #3d7434;
+}
+
+.status-pill.cancelled {
+    background: #fbe9e7;
+    color: #a33c35;
+}
+
+.status-pill.in_progress, .status-pill.accepted {
+    background: #fff2d8;
+    color: #93661c;
+}
+
+.rider-meta strong {
+    font-size: 14px;
+}
+
+@media (max-width: 850px) {
+    .rider-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .rider-header {
+        padding: 0 20px;
+    }
+
+    .rider-welcome {
+        margin-top: 27px;
+    }
+}

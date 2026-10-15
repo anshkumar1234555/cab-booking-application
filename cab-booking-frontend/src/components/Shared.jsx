@@ -1,0 +1,10 @@
+import { AlertCircle, CheckCircle2, LoaderCircle } from "lucide-react";
+export function Loading({ label = "Loading…" }) { return <div className="loading-state"><LoaderCircle className="spin" size={20}/>{label}</div>; }
+export function ErrorMessage({ children }) { return children ? <div className="alert alert-error"><AlertCircle size={17}/><span>{children}</span></div> : null; }
+export function SuccessMessage({ children }) { return children ? <div className="alert alert-success"><CheckCircle2 size={17}/><span>{children}</span></div> : null; }
+export function PageHeader({ eyebrow, title, description, action }) { return <div className="page-header"><div><span className="eyebrow">{eyebrow}</span><h1>{title}</h1><p>{description}</p></div>{action}</div>; }
+export function StatCard({ label, value, hint, icon: Icon }) { return <article className="stat-card"><div className="stat-top"><span>{label}</span><span className="stat-icon">{Icon ? <Icon size={19}/> : null}</span></div><strong>{value ?? "—"}</strong>{hint && <small>{hint}</small>}</article>; }
+export function StatusPill({ status }) { const value = String(status || "UNKNOWN").toUpperCase(); return <span className={`status-pill status-${value.toLowerCase().replaceAll("_", "-")}`}>{value.replaceAll("_", " ")}</span>; }
+export function EmptyState({ title = "Nothing here yet", description = "Your information will appear here when available." }) { return <div className="empty-state"><div className="empty-icon">◇</div><b>{title}</b><p>{description}</p></div>; }
+export function money(value) { const n = Number(value); return Number.isFinite(n) ? new Intl.NumberFormat("en-IN", { style: "currency", currency: "INR", maximumFractionDigits: 2 }).format(n) : "₹0.00"; }
+export function listFrom(data) { if (Array.isArray(data)) return data; if (Array.isArray(data?.content)) return data.content; if (Array.isArray(data?.data)) return data.data; if (Array.isArray(data?.rides)) return data.rides; if (Array.isArray(data?.users)) return data.users; if (Array.isArray(data?.payments)) return data.payments; return []; }
